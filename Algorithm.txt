@@ -1,0 +1,9 @@
+Steps
+	--First the json is read from the file
+	--After reading Json each structure objects are stored in a map with the id as keys for future reference and the also the root
+	--Transforming into the required output
+			--> Root structure object is stored in the result vairable.
+			--> From the List of structure objects (ie map) children are added to the result children and the children id's get stored in the stack
+			--> The first id in the stack gets popped and again the above step gets repeated and they get added to the new stack 
+			-->the process continues till all the children get added
+	-- Prints the final required output
